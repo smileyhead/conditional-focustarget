@@ -10,7 +10,7 @@ public class Localisation
     {
         if (langCode == "auto") langCode = Plugin.PluginInterface.UiLanguage;
 
-        string jsonPath = $"localisation{Path.PathSeparator}{langCode}.json";
+        string jsonPath = $"localisation{Path.DirectorySeparatorChar}{langCode}.json";
 
         string jsonText = File.ReadAllText(jsonPath);
         Strings = JsonSerializer.Deserialize<Root>(jsonText);
