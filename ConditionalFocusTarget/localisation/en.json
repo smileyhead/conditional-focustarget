@@ -1,0 +1,26 @@
+{
+    "command_description": {
+        "short": "Makes current target your focus target when there is no current focus target.",
+        "long": "{shortDescription} Alias: /cft"
+    },
+    "settings": {
+        "lang_dropdown": {
+            "label": "Language:",
+            "auto": "Automatic",
+            "crowdin_note": "You can help out with translation over at {crowdinLink}.",
+            "crowdin_link": "Crowdin"
+        },
+        "chat_annouce": {
+            "title": "Announce focus change in chat window:",
+            "do_not": "Do not announce",
+            "do_changed": "Announce, if focus changed",
+            "do_unchanged": "Announce, if focus not changed",
+            "do_not_pvp": "Disable announcements in PvP"
+        }
+    },
+    "announcement": {
+        "changed": "Focus changed",
+        "unchanged": "Focus unchanged",
+        "unchanged_pvp": "{focusUnchanged}: disabled in PvP"
+    }
+}
