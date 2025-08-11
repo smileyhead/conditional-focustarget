@@ -25,34 +25,50 @@ public class ConfigWindow : Window, IDisposable
 
     public void Dispose() { }
 
-    public override void PreDraw()
-    {
-        // Flags must be added or removed before Draw() is being called, or they won't apply
-        if (Configuration.IsConfigWindowMovable)
-        {
-            Flags &= ~ImGuiWindowFlags.NoMove;
-        }
-        else
-        {
-            Flags |= ImGuiWindowFlags.NoMove;
-        }
-    }
-
     public override void Draw()
     {
         // Can't ref a property, so use a local copy
-        var configValue = Configuration.SomePropertyToBeSavedAndWithADefault;
-        if (ImGui.Checkbox("Random Config Bool", ref configValue))
-        {
-            Configuration.SomePropertyToBeSavedAndWithADefault = configValue;
-            // Can save immediately on change if you don't want to provide a "Save and Close" button
-            Configuration.Save();
-        }
-
         var movable = Configuration.IsConfigWindowMovable;
         if (ImGui.Checkbox("Movable Config Window", ref movable))
         {
             Configuration.IsConfigWindowMovable = movable;
+            Configuration.Save();
+        }
+
+        var lang = (int)Configuration.LanguageState;
+        if (ImGui.Combo(Plugin.Loc.Strings.settings.lang_dropdown.label, ref lang, Configuration.LangsToImGuiList()))
+        {
+            Configuration.LanguageState = (LangState)lang;
+            Configuration.Save();
+        }
+
+        ImGui.Text(Plugin.Loc.Strings.settings.lang_dropdown.crowdinNotePre); ImGui.SameLine();
+        if (ImGui.Button(Plugin.Loc.Strings.settings.lang_dropdown.crowdinLink))
+            Dalamud.Utility.Util.OpenLink("INSERT CROWDIN LINK HERE"); ImGui.SameLine();
+        ImGui.Text(Plugin.Loc.Strings.settings.lang_dropdown.crowdinNotePost);
+
+        ImGui.Text(Plugin.Loc.Strings.settings.chat_annouce.title);
+        var announce = (int)Configuration.AnnounceFocusChange;
+        if (ImGui.RadioButton(Plugin.Loc.Strings.settings.chat_annouce.do_not, ref announce, 0))
+        {
+            Configuration.AnnounceFocusChange = (AnnounceState)announce;
+            Configuration.Save();
+        }
+        if (ImGui.RadioButton(Plugin.Loc.Strings.settings.chat_annouce.do_changed, ref announce, 1))
+        {
+            Configuration.AnnounceFocusChange = (AnnounceState)announce;
+            Configuration.Save();
+        }
+        if (ImGui.RadioButton(Plugin.Loc.Strings.settings.chat_annouce.do_unchanged, ref announce, 2))
+        {
+            Configuration.AnnounceFocusChange = (AnnounceState)announce;
+            Configuration.Save();
+        }
+
+        var mute_pvp = Configuration.AnnounceDisableInPvp;
+        if (ImGui.Checkbox(Plugin.Loc.Strings.settings.chat_annouce.do_not_pvp, ref mute_pvp))
+        {
+            Configuration.AnnounceDisableInPvp = mute_pvp;
             Configuration.Save();
         }
     }

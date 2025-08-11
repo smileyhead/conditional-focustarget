@@ -1,6 +1,5 @@
 using ConditionalFocusTarget;
 using System.IO;
-using System.Runtime.CompilerServices;
 using System.Text.Json;
 
 public class Localisation
@@ -9,6 +8,8 @@ public class Localisation
 
     public Localisation(string langCode)
     {
+        if (langCode == "auto") langCode = Plugin.PluginInterface.UiLanguage;
+
         string jsonPath = $"localisation{Path.PathSeparator}{langCode}.json";
 
         string jsonText = File.ReadAllText(jsonPath);
@@ -52,7 +53,8 @@ public class LangDropdown
 {
     public string label { get; set; }
     public string auto { get; set; }
-    public string crowdinNote { get; set; }
+    public string crowdinNotePre { get; set; }
+    public string crowdinNotePost { get; set; }
     public string crowdinLink { get; set; }
 }
 

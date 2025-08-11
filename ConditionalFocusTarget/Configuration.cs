@@ -13,6 +13,8 @@ public class Configuration : IPluginConfiguration
     public AnnounceState AnnounceFocusChange { get; set; } = AnnounceState.off;
     public bool AnnounceDisableInPvp { get; set; } = false;
 
+    public static string LangsToImGuiList() => String.Join('\0', Enum.GetNames(typeof(LangState)));
+
     // The below exist just to make saving less cumbersome
     public void Save()
     {
