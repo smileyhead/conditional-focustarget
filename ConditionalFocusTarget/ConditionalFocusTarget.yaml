@@ -1,0 +1,34 @@
+changelog: Initial release.
+author: smileyhead
+name: Conditional Focus Target
+internal_name: ConditionalFocusTarget
+punchline: Like /focustarget, but with no overrides.
+description: |-
+  "(PvE-only.)
+  Adds the /conditionalfocustarget command (/cft for short), which
+  focuses your current target, but only as long as you do not already
+  have a focus target set (or that target is dead).
+
+  This plugin does not change the behaviour of the stock /focustarget
+  command, and must be triggered either manually or by adding it to a
+  macro. The command is designed to be included in your Attack Nearest
+  macro (or similar).
+  
+  Example scenario: You are confronted by a boss. You execute your
+  Attack Nearest macro which both targets and focuses the boss. The boss
+  spawns an add, which you target using the same macro, but since you
+  already have a focus on the boss, it stays on the boss and only your
+  regular targeting moves onto the add."
+repo_url: https://github.com/smileyhead/conditional-focustarget
+tags:
+  - combat
+  - targeting
+  - targetting
+  - focusing
+category_tags:
+  - jobs
+  - utility
+image_urls:
+  - null #TODO
+  - null #TODO
+icon_url: null #TODO
