@@ -1,0 +1,37 @@
+changelog: Initial release.
+author: smileyhead
+name: Sticky Focus Target
+internal_name: StickyFocusTarget
+punchline: Like /focustarget, but with no overrides.
+description: |-
+  "(PvE-only.) Adds the /stickyfocustarget command, which focuses your current
+  target, as long as you do not already have a focus target set.
+    
+  Have you ever felt focusing was under-utilised? Wanted to use it without a
+  dedicated keybind? Do you not even know what focus targeting is?
+  You've come to the right place.
+    
+  You can add this command to your Attack Nearest macro and ensure that the
+  first enemy you target will become focused, and stay that way, until it dies.
+  This way, you can focus enemies without having to consciously press a keybind,
+  and ensure that, for example, when a boss spawns an add and you target it,
+  your current focus target will NOT get overriden.
+
+  This plugin does not change the behaviour of the stock /focustarget command,
+  and must be triggered either manually or by adding it to a macro.
+  Placeholders are supported."
+repo_url: https://github.com/smileyhead/conditional-focustarget
+tags:
+  - combat
+  - targeting
+  - targetting
+  - focusing
+  - conditionalfocustarget
+  - stickyfocustarget
+category_tags:
+  - jobs
+  - utility
+image_urls:
+  - null #TODO
+  - null #TODO
+icon_url: null #TODO

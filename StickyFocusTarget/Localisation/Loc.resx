@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+            
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="command_description_short" xml:space="preserve">
+        <value>Makes current target your focus target when there is no current focus target</value>
+        <comment>Help text for /cft</comment>
+    </data>
+    <data name="command_description_long" xml:space="preserve">
+        <value>Makes current target your focus target when there is no current focus target. Alias: /cft</value><comment>Help text for /conditionalfocustarget</comment>
+    </data>
+    <data name="announcement_unchanged_pvp" xml:space="preserve">
+        <value>Focus unchanged: disabled in PvP</value>
+        <comment>Chat message that gets posted on command execution if the focus target wasn't changed due to the player being in PvP</comment>
+    </data>
+    <data name="announcement_changed" xml:space="preserve">
+        <value>Focus changed</value>
+        <comment>Chat message that gets posted on command execution if the focus target was changed</comment>
+    </data>
+    <data name="announcement_unchanged" xml:space="preserve">
+        <value>Focus unchanged</value>
+        <comment>Chat message that gets posted on command execution if the focus target wasn't changed</comment>
+    </data>
+    <data name="settings_lang_dropdown_auto" xml:space="preserve">
+        <value>Automatic</value>
+        <comment>Top option in the Settings window's Language drop-down that will dynamically set the plugin's language to match Dalamud's display language</comment>
+    </data>
+    <data name="settings_lang_crowdin_tooltip" xml:space="preserve">
+        <value>You can help out with translation over at Crowdin
+{crowdinLink}</value>
+        <comment>Appears in front of the Crowdin button in the Language section of the Settings window</comment>
+    </data>
+    <data name="settings_lang_crowdin_button" xml:space="preserve">
+        <value>Open Crowdin</value>
+        <comment>Open button for Crowdin in the Language section of the Settings window</comment>
+    </data>
+    <data name="settings_lang_dropdown_label" xml:space="preserve">
+        <value>Language: </value>
+        <comment>Label for the Language drop-down in the Settings window</comment>
+    </data>
+    <data name="settings_chat_announce_title" xml:space="preserve">
+        <value>Announce focus change in chat window:</value>
+    </data>
+    <data name="settings_chat_announce_do_not" xml:space="preserve">
+        <value>Do not announce</value>
+    </data>
+    <data name="settings_chat_announce_yes_if_changed" xml:space="preserve">
+        <value>Announce, if focus changed</value>
+    </data>
+    <data name="settings_chat_announce_yes_if_not_changed" xml:space="preserve">
+        <value>Announce, if focus not changed</value>
+    </data>
+    <data name="settings_disable_in_pvp" xml:space="preserve">
+        <value>Disable announcements in PvP</value>
+    </data>
+    <data name="settings_commands_title" xml:space="preserve">
+        <value>Available commands:</value>
+    </data>
+    <data name="settings_commands_same" xml:space="preserve">
+        <value>Same as above.</value>
+        <comment>States that the alias for the main command does the same thing.</comment>
+    </data>
+</root>

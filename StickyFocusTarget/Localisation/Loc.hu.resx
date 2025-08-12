@@ -1,0 +1,63 @@
+<root>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="command_description_short" xml:space="preserve">
+        <value>Fókuszba helyezi a jelenlegi célpontot, ha nincs már beállított fókusz</value>
+    </data>
+    <data name="command_description_long" xml:space="preserve">
+        <value>Fókuszba helyezi a jelenlegi célpontot, ha nincs már beállított fókusz. Áljel: /cft</value>
+    </data>
+    <data name="announcement_changed" xml:space="preserve">
+        <value>A fókusz megváltozott</value>
+    </data>
+    <data name="announcement_unchanged" xml:space="preserve">
+        <value>A fókusz változatlan</value>
+    </data>
+    <data name="announcement_unchanged_pvp" xml:space="preserve">
+        <value>A fókusz változatlan: PvP-ben korlátozott</value>
+    </data>
+    <data name="settings_lang_dropdown_auto" xml:space="preserve">
+        <value>Automatikus</value>
+    </data>
+    <data name="settings_lang_crowdin_tooltip" xml:space="preserve">
+        <value>Fordítással a Crowdinen segíthetsz
+{crowdinLink}</value>
+    </data>
+    <data name="settings_lang_crowdin_button" xml:space="preserve">
+        <value>A Crowdin megnyitása</value>
+    </data>
+    <data name="settings_lang_dropdown_label" xml:space="preserve">
+        <value>Nyelv:</value>
+    </data>
+    <data name="settings_chat_announce_title" xml:space="preserve">
+        <value>Fókuszváltozás visszajelzése a csevegőablakban:</value>
+    </data>
+    <data name="settings_chat_announce_do_not" xml:space="preserve">
+        <value>Nincs visszajelzés</value>
+    </data>
+    <data name="settings_chat_announce_yes_if_changed" xml:space="preserve">
+        <value>Visszajelzés, ha a fókusz megváltozott</value>
+    </data>
+    <data name="settings_chat_announce_yes_if_not_changed" xml:space="preserve">
+        <value>Visszajelzés, ha a fókusz nem változott meg</value>
+    </data>
+    <data name="settings_disable_in_pvp" xml:space="preserve">
+        <value>Visszajelzés némítása PvP-ben</value>
+    </data>
+    <data name="settings_commands_title" xml:space="preserve">
+        <value>Elérhető parancsok:</value>
+    </data>
+    <data name="settings_commands_same" xml:space="preserve">
+        <value>Szintúgy.</value>
+    </data>
+</root>

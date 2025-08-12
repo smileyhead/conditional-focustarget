@@ -7,7 +7,7 @@
         "lang_dropdown": {
             "label": "Language:",
             "auto": "Automatic",
-            "crowdin_note_pre": "You can help out with translation over at",
+            "crowdin_note_pre": "You can help out with translation over at ",
             "crowdin_link": "Crowdin",
             "crowdin_note_post": "."
         },
