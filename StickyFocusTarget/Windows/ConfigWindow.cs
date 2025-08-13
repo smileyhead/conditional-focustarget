@@ -43,11 +43,11 @@ public class ConfigWindow : Window, IDisposable
 
         ImGui.SameLine();
 
-        var crowdinLink = "https://crowdin.com";
+        var githubLink = "https://github.com/smileyhead/conditional-focustarget/blob/master/README.md#localisationcontribution";
         if (ImGui.Button(Loc.settings_lang_contribute_button))
-            Util.OpenLink(crowdinLink); //TODO
+            Util.OpenLink(githubLink);
         if (ImGui.IsItemHovered())
-            ImGui.SetTooltip(Loc.settings_lang_contribute_tooltip.Replace("{crowdinLink}", crowdinLink));
+            ImGui.SetTooltip(Loc.settings_lang_contribute_tooltip.Replace("{githubLink}", githubLink));
 
         ImGui.Separator();
         ImGui.Spacing();

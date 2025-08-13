@@ -169,7 +169,7 @@ namespace StickyFocusTarget.Localisation {
         
         /// <summary>
         ///   Looks up a localized string similar to You can help out with translation over at GitHub
-        ///{crowdinLink}.
+        ///{githubLink}.
         /// </summary>
         internal static string settings_lang_contribute_tooltip {
             get {

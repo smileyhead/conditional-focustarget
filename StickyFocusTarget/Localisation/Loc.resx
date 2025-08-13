@@ -49,7 +49,7 @@
     </data>
     <data name="settings_lang_contribute_tooltip" xml:space="preserve">
         <value>You can help out with translation over at GitHub
-{crowdinLink}</value>
+{githubLink}</value>
         <comment>Tooltip that shows when hovering the Contribute button in the Settings window</comment>
     </data>
     <data name="settings_lang_contribute_button" xml:space="preserve">
