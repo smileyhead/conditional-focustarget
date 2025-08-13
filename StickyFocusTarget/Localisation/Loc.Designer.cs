@@ -141,15 +141,6 @@ namespace StickyFocusTarget.Localisation {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Same as above..
-        /// </summary>
-        internal static string settings_commands_same {
-            get {
-                return ResourceManager.GetString("settings_commands_same", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Available commands:.
         /// </summary>
         internal static string settings_commands_title {
@@ -168,21 +159,21 @@ namespace StickyFocusTarget.Localisation {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Open Crowdin.
+        ///   Looks up a localized string similar to Contribute.
         /// </summary>
-        internal static string settings_lang_crowdin_button {
+        internal static string settings_lang_contribute_button {
             get {
-                return ResourceManager.GetString("settings_lang_crowdin_button", resourceCulture);
+                return ResourceManager.GetString("settings_lang_contribute_button", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to You can help out with translation over at Crowdin
+        ///   Looks up a localized string similar to You can help out with translation over at GitHub
         ///{crowdinLink}.
         /// </summary>
-        internal static string settings_lang_crowdin_tooltip {
+        internal static string settings_lang_contribute_tooltip {
             get {
-                return ResourceManager.GetString("settings_lang_crowdin_tooltip", resourceCulture);
+                return ResourceManager.GetString("settings_lang_contribute_tooltip", resourceCulture);
             }
         }
         

@@ -1,6 +1,6 @@
-using Dalamud.Configuration;
 using System;
 using System.Globalization;
+using Dalamud.Configuration;
 using StickyFocusTarget.Localisation;
 
 namespace StickyFocusTarget;
@@ -8,11 +8,12 @@ namespace StickyFocusTarget;
 [Serializable]
 public class Configuration : IPluginConfiguration
 {
-    public int Version { get; set; } = 0;
     public int LanguageState { get; set; } = 0; //0 == Automatic. More lang codes in Localisation.cs
     public AnnounceState AnnounceFocusChange { get; set; } = AnnounceState.Off;
     public bool AnnounceDisableInPvp { get; set; } = true;
+    public int Version { get; set; } = 0;
 
+    
     public static void AutoSetCulture()
     {
         Loc.Culture = CultureInfo.GetCultureInfo(Plugin.PluginInterface.UiLanguage);
@@ -25,4 +26,10 @@ public class Configuration : IPluginConfiguration
         Plugin.PluginInterface.SavePluginConfig(this);
     }
 }
-public enum AnnounceState { Off, OnChange, OnNoChange }
+
+public enum AnnounceState
+{
+    Off,
+    OnChange,
+    OnNoChange
+}

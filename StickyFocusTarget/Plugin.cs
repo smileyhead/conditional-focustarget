@@ -1,12 +1,10 @@
 using System.Globalization;
 using Dalamud.Game.ClientState.Objects;
-using Dalamud.Game.ClientState.Objects.Types;
 using Dalamud.Game.Command;
 using Dalamud.Interface.Windowing;
 using Dalamud.IoC;
 using Dalamud.Plugin;
 using Dalamud.Plugin.Services;
-using FFXIVClientStructs.FFXIV.Client.Game.Object;
 using FFXIVClientStructs.FFXIV.Client.UI.Misc;
 using StickyFocusTarget.Localisation;
 using StickyFocusTarget.Windows;
@@ -23,10 +21,13 @@ public sealed class Plugin : IDalamudPlugin
     public Plugin()
     {
         Configuration = PluginInterface.GetPluginConfig() as Configuration ?? new Configuration();
-        
+
         if (Configuration.LanguageState == 0) Configuration.AutoSetCulture();
-        else Loc.Culture = 
-            CultureInfo.GetCultureInfo(LocalisationUtilities.PluginSupportedLanguages[Configuration.LanguageState]);
+        else
+        {
+            Loc.Culture =
+                CultureInfo.GetCultureInfo(LocalisationUtilities.PluginSupportedLanguages[Configuration.LanguageState]);
+        }
 
         ConfigWindow = new ConfigWindow(this);
 
@@ -88,7 +89,7 @@ public sealed class Plugin : IDalamudPlugin
                 TargetManager.FocusTarget = ObjectTable.CreateObjectReference((nint)phTarget);
             }
             else TargetManager.FocusTarget = TargetManager.Target;
-            
+
             if (Configuration.AnnounceFocusChange == AnnounceState.OnChange)
                 ChatGui.Print(Loc.announcement_changed);
             return;

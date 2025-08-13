@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Dalamud.NET.Sdk/13.0.0">
-  <PropertyGroup>
-    <Version>0.0.0.1</Version>
-    <Description>Like /focustarget but with no overrides.</Description>
-    <PackageProjectUrl>https://github.com/smileyhead/conditional-focustarget</PackageProjectUrl>
-    <PackageLicenseExpression>AGPL-3.0-or-later</PackageLicenseExpression>
-    <IsPackable>false</IsPackable>
-  </PropertyGroup>
+    <PropertyGroup>
+        <Version>0.0.0.1</Version>
+        <Description>Like /focustarget but with no overrides.</Description>
+        <PackageProjectUrl>https://github.com/smileyhead/conditional-focustarget</PackageProjectUrl>
+        <PackageLicenseExpression>AGPL-3.0-or-later</PackageLicenseExpression>
+        <IsPackable>false</IsPackable>
+    </PropertyGroup>
 
-  <ItemGroup>
-    <EmbeddedResource Update="Localisation\Loc.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Loc.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-  </ItemGroup>
+    <ItemGroup>
+        <EmbeddedResource Update="Localisation\Loc.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+            <LastGenOutput>Loc.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+    </ItemGroup>
 
-  <ItemGroup>
-    <Compile Update="Localisation\Loc.Designer.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Loc.resx</DependentUpon>
-    </Compile>
-  </ItemGroup>
+    <ItemGroup>
+        <Compile Update="Localisation\Loc.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>Loc.resx</DependentUpon>
+        </Compile>
+    </ItemGroup>
 </Project>

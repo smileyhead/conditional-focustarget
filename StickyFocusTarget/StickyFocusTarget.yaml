@@ -4,7 +4,7 @@ name: Sticky Focus Target
 internal_name: StickyFocusTarget
 punchline: Like /focustarget, but with no overrides.
 description: |-
-  "(PvE-only.) Adds the /stickyfocustarget command, which focuses your current
+  (PvE-only.) Adds the /stickyfocustarget command, which focuses your current
   target, as long as you do not already have a focus target set.
     
   Have you ever felt focusing was under-utilised? Wanted to use it without a
@@ -19,7 +19,7 @@ description: |-
 
   This plugin does not change the behaviour of the stock /focustarget command,
   and must be triggered either manually or by adding it to a macro.
-  Placeholders are supported."
+  Placeholders are supported.
 repo_url: https://github.com/smileyhead/conditional-focustarget
 tags:
   - combat
