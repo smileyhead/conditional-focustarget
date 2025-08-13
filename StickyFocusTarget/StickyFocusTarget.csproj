@@ -9,9 +9,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="Localisation\en.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
     <EmbeddedResource Update="Localisation\Loc.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Loc.Designer.cs</LastGenOutput>
