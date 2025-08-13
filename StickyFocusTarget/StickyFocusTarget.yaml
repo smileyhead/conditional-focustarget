@@ -12,10 +12,10 @@ description: |-
   You've come to the right place.
     
   You can add this command to your Attack Nearest macro and ensure that the
-  first enemy you target will become focused, and stay that way, until it dies.
-  This way, you can focus enemies without having to consciously press a keybind,
-  and ensure that, for example, when a boss spawns an add and you target it,
-  your current focus target will NOT get overriden.
+  first enemy you target will also become focused, and stay that way, until it dies.
+  With this, you can focus enemies without having to consciously press a keybind,
+  and ensure that, for instance, when a focused boss spawns an add and you target it,
+  the boss' focus will NOT get overriden.
 
   This plugin does not change the behaviour of the stock /focustarget command,
   and must be triggered either manually or by adding it to a macro.
