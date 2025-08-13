@@ -43,7 +43,7 @@ public class ConfigWindow : Window, IDisposable
 
         ImGui.SameLine();
 
-        var githubLink = "https://github.com/smileyhead/conditional-focustarget/blob/master/README.md#localisationcontribution";
+        var githubLink = "https://github.com/smileyhead/conditional-focustarget/blob/master/README.md#localisation-contribution";
         if (ImGui.Button(Loc.settings_lang_contribute_button))
             Util.OpenLink(githubLink);
         if (ImGui.IsItemHovered())
