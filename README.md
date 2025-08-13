@@ -1,76 +1,56 @@
-> ⚠️ **Don't click Fork!**
-> 
-> This is a GitHub Template repo. If you want to use this for a plugin, [use this template][new-repo] to make a new repo!
->
-> ![image](https://github.com/goatcorp/SamplePlugin/assets/16760685/d9732094-e1ed-4769-a70b-58ed2b92580c)
+# Sticky Focus Target
 
-# SamplePlugin
+<p align="center">
+  <img src="Assets/icon.png" alt="Dalamud" width="200"/>
+</p>
 
-[![Use This Template badge](https://img.shields.io/badge/Use%20This%20Template-0?logo=github&labelColor=grey)][new-repo]
+Sticky Focus Target is a plugin for [Dalamud](https://github.com/goatcorp/Dalamud).
 
+_(PvE-only.)_ Adds the /stickyfocustarget command, which focuses your current
+target, as long as you do not already have a focus target set.
 
-Simple example plugin for Dalamud.
+Have you ever felt focusing was under-utilised? Wanted to use it without a
+dedicated keybind? Do you not even know what focus targeting is?
+You've come to the right place.
 
-This is not designed to be the simplest possible example, but it is also not designed to cover everything you might want to do. For more detailed questions, come ask in [the Discord](https://discord.gg/holdshift).
+You can add this command to your Attack Nearest macro and ensure that the
+first enemy you target will also become focused, and stay that way, until it dies.
+With this, you can focus enemies without having to consciously press a keybind,
+and ensure that, for instance, when a focused boss spawns an add and you target it,
+the boss' focus will NOT get overriden.
 
-## Main Points
+This plugin does not change the behaviour of the stock /focustarget command,
+and must be triggered either manually or by adding it to a macro.
+Placeholders are supported.
 
-* Simple functional plugin
-  * Slash command
-  * Main UI
-  * Settings UI
-  * Image loading
-  * Plugin json
-* Simple, slightly-improved plugin configuration handling
-* Project organization
-  * Copies all necessary plugin files to the output directory
-    * Does not copy dependencies that are provided by dalamud
-    * Output directory can be zipped directly and have exactly what is required
-  * Hides data files from visual studio to reduce clutter
-    * Also allows having data files in different paths than VS would usually allow if done in the IDE directly
+<table>
+<tr>
+<td>
+<img src="Assets/focustarget.gif" alt="" />
+<p>Attack Nearest macro with /focustarget</p>
+</td>
+<td>
+<img src="Assets/stickyfocustarget.gif" alt="" />
+<p>Attack Nearest macro with /stickyfocustarget</p>
+</td>
+</tr>
+</table>
 
+## Localisation Contribution
 
-The intention is less that any of this is used directly in other projects, and more to show how similar things can be done.
+If you would like to supply a localisation to this plugin, you have one of two options:
 
-## How To Use
+### Option 1: Submit through GitHub *(preferred)*
 
-### Getting Started
+If you are comfortable using GitHub's systems and editing .resx resource files, please use this method.
 
-To begin, [clone this template repository][new-repo] to your own GitHub account. This will automatically bring in everything you need to get a jumpstart on development. You do not need to fork this repository unless you intend to contribute modifications to it.
+1. Fork this repository
+2. Use your favourite editor to add a new culture to `StickyFocusTarget/Localisation/Loc.resx`, and translate the strings.
+   - Alternatively, if you would prefer working with raw files instead, create a copy of `Loc.hu.resx`, replacing `hu` with your language's two-letter ISO 639 code (the ‘Set 1’ column in the table found [here](https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes#Table)). You can find the English-language strings in `Loc.resx`.
+3. Commit these changes to your fork and open a pull request against this repository.
 
-Be sure to also check out the [Dalamud Developer Docs][dalamud-docs] for helpful information about building your own plugin. The Developer Docs includes helpful information about all sorts of things, including [how to submit][submit] your newly-created plugin to the official repository. Assuming you use this template repository, the provided project build configuration and license are already chosen to make everything a breeze.
-
-[new-repo]: https://github.com/new?template_name=SamplePlugin&template_owner=goatcorp
-[dalamud-docs]: https://dalamud.dev
-[submit]: https://dalamud.dev/plugin-publishing/submission
-
-### Prerequisites
-
-SamplePlugin assumes all the following prerequisites are met:
-
-* XIVLauncher, FINAL FANTASY XIV, and Dalamud have all been installed and the game has been run with Dalamud at least once.
-* XIVLauncher is installed to its default directories and configurations.
-  * If a custom path is required for Dalamud's dev directory, it must be set with the `DALAMUD_HOME` environment variable.
-* A .NET Core 8 SDK has been installed and configured, or is otherwise available. (In most cases, the IDE will take care of this.)
-
-### Building
-
-1. Open up `SamplePlugin.sln` in your C# editor of choice (likely [Visual Studio 2022](https://visualstudio.microsoft.com) or [JetBrains Rider](https://www.jetbrains.com/rider/)).
-2. Build the solution. By default, this will build a `Debug` build, but you can switch to `Release` in your IDE.
-3. The resulting plugin can be found at `SamplePlugin/bin/x64/Debug/SamplePlugin.dll` (or `Release` if appropriate.)
-
-### Activating in-game
-
-1. Launch the game and use `/xlsettings` in chat or `xlsettings` in the Dalamud Console to open up the Dalamud settings.
-    * In here, go to `Experimental`, and add the full path to the `SamplePlugin.dll` to the list of Dev Plugin Locations.
-2. Next, use `/xlplugins` (chat) or `xlplugins` (console) to open up the Plugin Installer.
-    * In here, go to `Dev Tools > Installed Dev Plugins`, and the `SamplePlugin` should be visible. Enable it.
-3. You should now be able to use `/pmycommand` (chat) or `pmycommand` (console)!
-
-Note that you only need to add it to the Dev Plugin Locations once (Step 1); it is preserved afterwards. You can disable, enable, or load your plugin on startup through the Plugin Installer.
-
-### Reconfiguring for your own uses
-
-Replace all references to `SamplePlugin` in all the files and filenames with your desired name, then start building the plugin of your dreams. You'll figure it out 😁
-
-Dalamud will load the JSON file (by default, `SamplePlugin/SamplePlugin.json`) next to your DLL and use it for metadata, including the description for your plugin in the Plugin Installer. Make sure to update this with information relevant to _your_ plugin!
+### Option 2: Submit through Google Sheets
+1. Contact me through any of the options listed on my [profile](https://github.com/smileyhead), or by tagging me in the [#plugin-translations channel](https://canary.discord.com/channels/581875019861328007/837457695337873428) of the XIVLauncher & Dalamud Discord server.
+2. Give me your email address so that I can add you to a Google Sheets document.
+3. Make your edits there and tell me when you are done.
+4. I will manually import your work to the plugin.
