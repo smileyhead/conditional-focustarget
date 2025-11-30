@@ -21,7 +21,7 @@
         <value>フォーカスターゲットが未設定の場合、現在のターゲットをフォーカスターゲットにします</value>
     </data>
     <data name="command_description_long" xml:space="preserve">
-        <value>フォーカスターゲットが未設定の場合、現在のターゲットをフォーカスターゲットに設定します。エイリアス: /cft</value>
+        <value>フォーカスターゲットが未設定の場合、現在のターゲットをフォーカスターゲットに設定します。ショートカットコマンド: /cft</value>
     </data>
     <data name="announcement_changed" xml:space="preserve">
         <value>フォーカスを変更しました</value>
