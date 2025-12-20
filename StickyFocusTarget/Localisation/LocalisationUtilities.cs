@@ -5,7 +5,7 @@ namespace StickyFocusTarget.Localisation;
 
 public class LocalisationUtilities
 {
-    public static readonly List<string> PluginSupportedLanguages = ["auto", "en", "hu"];
+    public static readonly List<string> PluginSupportedLanguages = ["auto", "en", "hu", "ja"];
 
     public static List<string> GenerateLanguageList()
     {
