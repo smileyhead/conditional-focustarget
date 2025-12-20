@@ -25,5 +25,6 @@
 
     <ItemGroup>
       <PackageReference Update="DotNet.ReproducibleBuilds" Version="1.2.39" />
+      <PackageReference Remove="DalamudPackager" />
     </ItemGroup>
 </Project>
