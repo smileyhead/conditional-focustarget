@@ -47,10 +47,20 @@ If you are comfortable using GitHub's systems and editing .resx resource files, 
 1. Fork this repository
 2. Use your favourite editor to add a new culture to `StickyFocusTarget/Localisation/Loc.resx`, and translate the strings.
    - Alternatively, if you would prefer working with raw files instead, create a copy of `Loc.hu.resx`, replacing `hu` with your language's two-letter ISO 639 code (the ‘Set 1’ column in the table found [here](https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes#Table)). You can find the English-language strings in `Loc.resx`.
-3. Commit these changes to your fork and open a pull request against this repository.
+3. Follow these guidelines when translating `settings_lang_credits`:
+    - You may credit yourself in the name you wish (or remain anonymous).
+    - Do not remove other translators' names.
+    - Please keep the list in an alphabetical order (or local equivalent).
+    - Please separate names with a comma (or local equivalent).
+4. Commit these changes to your fork and open a pull request against this repository.
 
 ### Option 2: Submit through Google Sheets
 1. Contact me through any of the options listed on my [profile](https://github.com/smileyhead), or by tagging me in the [#plugin-translations channel](https://canary.discord.com/channels/581875019861328007/837457695337873428) of the XIVLauncher & Dalamud Discord server.
 2. Give me your email address so that I can add you to a Google Sheets document.
 3. Make your edits there and tell me when you are done.
-4. I will manually import your work to the plugin.
+4. Follow these guidelines when translating `settings_lang_credits`:
+    - You may credit yourself in the name you wish (or remain anonymous).
+    - Do not remove other translators' names.
+    - Please keep the list in an alphabetical order (or local equivalent).
+    - Please separate names with a comma (or local equivalent).
+5. I will manually import your work to the plugin.
