@@ -49,6 +49,15 @@ public class ConfigWindow : Window, IDisposable
         if (ImGui.IsItemHovered())
             ImGui.SetTooltip(Loc.settings_lang_contribute_tooltip.Replace("{githubLink}", githubLink));
 
+        if (Loc.Culture.NativeName != "English" && Loc.Culture.NativeName != "magyar")
+        {
+            float indentSize = ImGui.CalcTextSize('m' + Loc.settings_lang_dropdown_label).X;
+                //The 'm' indents this a little more so that it aligns with the text inside the drop-down.
+            ImGui.Indent(indentSize);
+            ImGui.TextUnformatted(Loc.settings_lang_credits);
+            ImGui.Unindent(indentSize);
+        }
+        
         ImGui.Separator();
         ImGui.Spacing();
 

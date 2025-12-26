@@ -61,4 +61,7 @@
     <data name="settings_commands_title" xml:space="preserve">
         <value>Elérhető parancsok:</value>
     </data>
+    <data name="settings_lang_credits" xml:space="preserve">
+        <value>Fordította: ENTER YOUR NAME HERE</value>
+    </data>
 </root>

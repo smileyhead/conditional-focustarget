@@ -63,4 +63,7 @@
     <data name="settings_commands_title" xml:space="preserve">
         <value>使用可能なコマンド:</value>
     </data>
+    <data name="settings_lang_credits" xml:space="preserve">
+        <value> </value>
+    </data>
 </root>

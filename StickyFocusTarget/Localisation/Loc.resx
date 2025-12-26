@@ -78,4 +78,8 @@
     <data name="settings_commands_title" xml:space="preserve">
         <value>Available commands:</value>
     </data>
+    <data name="settings_lang_credits" xml:space="preserve">
+        <value>Translated by: ENTER YOUR NAME HERE</value>
+        <comment>You may credit yourself here. If there were other translators before you, do not remove their name. If possible, please keep names in alphabetical order and separated by a comma (or regional equivalents). </comment>
+    </data>
 </root>
